@@ -1,0 +1,319 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+    background-color: rgba(219, 216, 211, 0.966);
+    width: inherit;
+   
+   
+    
+}a{
+    text-decoration: none;
+    font-style: normal;
+}
+/* head-start */
+.Double-decker{
+  display: block;
+  justify-content: center;
+}
+
+.wrapper nav{
+    display: flex;
+    justify-content: space-between;
+    
+}
+.Register{
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 50px;
+    color: black;
+    margin-top: 25px;
+    
+    
+}
+.Register a{
+    display: block;
+    margin: 0px 10px;
+    color: rgb(230, 223, 223);
+    text-decoration:none;
+    width: 100%;
+    height: 100%;
+    line-height: 20px;
+    text-align: center;
+    border-radius: 20px;
+    background-color: rgb(101, 101, 151);
+}
+.Register a:hover {
+    background-color: black;
+    color: white;
+}
+
+.nav-items{
+    display: flex;
+    padding-top: 17px ;
+    font-size: 20px;
+    position: relative;
+    
+   
+   }
+
+.nav-items a{
+    margin-right: 80px;
+    color: black;
+    text-decoration: none;
+    display: block;
+    border-radius: 20px;
+    width: 100%;
+    height: 100%;
+    line-height: 40px;
+    text-align: center;
+    transition: 0.6s;
+}
+.nav-items a:hover{
+    background-color: rgb(190, 184, 184);
+    color: white;
+ }
+.nav-container{
+    background-color: rgb(35, 189, 150);
+    position: fixed;
+
+     width: 100%;
+     z-index: 1;
+     transition: 0.6s;
+     padding: 0px 10px;
+     
+    }
+   
+.nav-container .wrapper nav .logo{
+   color: rgb(0,84,121);
+   color: linear-gradient(90deg, rgba(0,84,121,1) 25%, rgba(255,0,224,1) 100%);
+    transition: 0.6s;
+}
+.nav-container.sticky{
+    padding: 5px 15px ;
+    background: rgb(166, 168, 170);
+    border-radius: 50px;
+    opacity: 0.8;
+}
+
+.nav-container.sticky a{
+color: rgb(12, 10, 10);
+}
+
+.nav-container.sticky .wrapper nav .logo{
+    color: rgb(12, 12, 20);
+}
+.nav-container.sticky:hover{
+    opacity: 1;
+
+}
+.nav-container.sticky a:hover{
+    color: rgb(225, 225, 238);
+    background-color: rgb(150, 144, 144);
+    }
+
+
+.logo {
+    display: flex;
+    align-items: center;
+    margin-left: 36px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+    
+}
+
+.navi , .regist{
+    display: none;
+}
+
+
+/* head-end */
+/* main start */
+#carouselCaptions .carousel-inner .carousel-caption h1 , #carouselCaptions .carousel-inner .carousel-caption h5{
+   color: rgb(10, 8, 3);
+   width: 350px;
+   margin: 0 auto;
+   background-color: rgb(243, 243, 243) ;
+   border-radius: 10px;
+   
+}
+#carouselCaptions{
+    padding-top: 120px;
+     display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1000px ;
+   
+    opacity: 80%;
+   
+   
+}
+#carouselCaptions:hover{
+    opacity: 100%;
+}
+
+#carouselCaptions .carousel-inner .carousel-item img{
+    width: 1000 !important;
+    
+    object-fit: cover;
+    
+}
+/* cards */
+.cards{
+    text-align: center;
+    margin-top: 20px;
+   
+}
+.card-img-top {
+        width: 100%;
+        height: 15vw;
+        object-fit: cover;
+    }
+
+/* end of content */
+.col-4{
+    
+    background-color: rgb(90, 81, 81);
+    color: white;
+}
+.col-4 ul li a{
+   
+    text-decoration: none;
+    color: white;
+}
+
+
+/* media */
+
+.navi{
+    margin-right: 500px;
+    font-size: 36px;
+}
+@media (max-width: 700px){
+    .cards{
+        margin: 0 auto;
+        display: block;
+        
+    }
+    .card-img-top {
+    width: 100%;
+    height: 150px;
+    
+    object-fit: cover;
+}
+.navi, .regist{
+    font-size: 20px;
+    display: block;
+    cursor: pointer;
+    margin-left: 20px;
+}
+
+.nav-container nav {
+   display: block;
+    
+     }
+     .nav-container nav .Double-decker .nav-items {
+        display: block;
+        font-size: 34px;
+        padding-top: 10px;
+
+         }
+         .nav-container nav .Double-decker .Register{
+             margin-bottom: 30px;
+             font-size: 22px;
+             
+         }
+          
+#carouselCaptions{
+    width: inherit;
+    padding-top: 130px;
+    opacity: 1;
+
+
+}
+
+.logo{
+    display: flex;
+}
+/* #togglemenu:checked + .nav-container nav .Double-decker .nav-items {
+    display: none;
+}
+#toggleregister:checked + .nav-container nav .Double-decker .Register  {
+    display: none;
+} */
+.navi , .regist{
+    display: flex;
+    margin-left: 100px;
+}
+label{
+    cursor: pointer;
+}
+.cards{
+    padding-top: 50px;
+}
+.nav-items a{
+    border-top: 5px solid gray;
+}
+.Register a{
+    display: block;
+    margin: 0px 10px;
+   
+     width: 100%;
+    height: 100%;
+    line-height: 20px;
+    text-align: center;
+    
+}
+.nav-container.sticky{
+    
+    opacity: 1;
+}
+
+}
+
+
+
+.GENRE{
+    padding-top: 130px;
+    padding-bottom: 20px;
+    text-align: center;
+    display: none;
+}
+.GENRE .card{
+  margin: 10px 5px;
+  background-color: rgb(142, 201, 201);
+}
+
+#search{
+    width: 500px;
+}
+#find{
+    background-color: rgb(136, 125, 125);
+    width: 70px;
+}
+
+.BLOG h1,.BLOG h3,.BLOG h5{
+    text-align: center;
+}
+.BLOG{
+    padding-top: 130px;
+    padding-bottom: 20px;
+    display: none;
+    margin: 0 100px;
+}
+  
+ 
+.CONTACTS{
+    padding-top: 130px;
+    padding-bottom: 30px;
+    display: none;
+    
+}
+  
+#maptext{
+    padding-top: 50px;
+}
