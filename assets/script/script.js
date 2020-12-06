@@ -92,6 +92,7 @@ function myMap() {
   const map = new google.maps.Map(document.getElementById("googleMap"), {
     zoom: 15,
     center: origin,
+      mapTypeId:google.maps.MapTypeId.HYBRID
   });
   infoWindow = new google.maps.InfoWindow();
     const locationButton = document.createElement("button");
