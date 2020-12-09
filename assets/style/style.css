@@ -317,3 +317,17 @@ label{
 #maptext{
     padding-top: 50px;
 }
+.end{
+    position: relative;
+}
+
+.imt{
+    border-radius: 500px;
+    width: 500px;
+    height: 500px;
+}
+.modal-content .modal-body img{
+    border-radius: 150px;
+    width: 150px;
+    height: 150px;
+}
