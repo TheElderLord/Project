@@ -19,26 +19,28 @@ $(document).ready(function(){
       $(".GENRE").hide();
       $(".BLOG").hide();
       $(".CONTACTS").hide();
-      $(".HOME").fadeIn(1500);
+      $(".HOME").fadeIn(1000);
     });
     $("#genreb").click(function(){
       $(".HOME").hide();
       $(".BLOG").hide();
       $(".CONTACTS").hide();
-      $(".GENRE").fadeIn(1500);
+      $(".GENRE").fadeIn(1000);
     });
     $("#blogb").click(function(){
       $(".GENRE").hide();
       $(".HOME").hide();
       $(".CONTACTS").hide();
-      $(".BLOG").fadeIn(1500);
+      $(".BLOG").fadeIn(1000);
     });
     $("#contactb").click(function(){
       $(".GENRE").hide();
       $(".HOME").hide();
       $(".BLOG").hide();
-      $(".CONTACTS").fadeIn(1500);
-      $(".CONTACTS").css({"display": "flex"});
+      $(".CONTACTS").fadeIn(1000);
+      $(".Kyz").css({"display": "flex"});
+      $(".Alm").css({"display": "flex"});
+      $(".Kost").css({"display": "flex"});
       $(".ctext").css({"padding-left": "200px"});
       $(".parg").css({"padding-left": "250px"});
     });
@@ -81,6 +83,8 @@ $(document).ready(function(){
 function myMap() {
   
   const origin = { lat: 44.81491770615942, lng: 65.52010305268523 };
+  const origin1 = { lat:43.227920879714, lng:76.90519811136512};
+  const origin2 = { lat:53.21315382799344, lng:63.62611062523043};
   // var mapProp= {
 
   //   center:origin,
@@ -92,8 +96,16 @@ function myMap() {
   const map = new google.maps.Map(document.getElementById("googleMap"), {
     zoom: 15,
     center: origin,
-      mapTypeId:google.maps.MapTypeId.HYBRID
   });
+  const map1 = new google.maps.Map(document.getElementById("googleMap1"), {
+    zoom: 15,
+    center: origin1,
+  });
+  const map2 = new google.maps.Map(document.getElementById("googleMap2"), {
+    zoom: 15,
+    center: origin2,
+  });
+
   infoWindow = new google.maps.InfoWindow();
     const locationButton = document.createElement("button");
     locationButton.textContent = "Current Location";
@@ -135,7 +147,7 @@ function myMap() {
       "</div>" +
       '<h4 id="firstHeading" class="firstHeading">BindMind</h4>' +
       '<div id="bodyContent">' +
-      "<p> Our office is located on Library Tazhibaev</p>" 
+      "<p> Our office</p>" 
       
       "</div>" +
       "</div>";
@@ -151,6 +163,23 @@ function myMap() {
     marker.addListener("click", () => {
       infowindow.open(map, marker);
     });
+    // second map
+    var markerl = new google.maps.Marker({
+      position:origin1,
+      icon:image
+    });
+    
+    markerl.setMap(map1);
+
+    var markerk = new google.maps.Marker({
+      position:origin1,
+      icon:image
+    });
+    
+    markerk.setMap(map2);
+    
+   
+    
   
     // second marker
     var image2 = {
@@ -304,5 +333,26 @@ function myMap() {
     },
     
   };
+
+
+
   
+
+
+
+
+
+
+
+
+  wow = new WOW(
+    {
+    boxClass:     'wow',      // default
+    animateClass: 'animated', // default
+    offset:       0,          // default
+    mobile:       true,       // default
+    live:         true        // default
+  }
+  )
+  wow.init();
   
