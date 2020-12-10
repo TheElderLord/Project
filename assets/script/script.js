@@ -172,7 +172,7 @@ function myMap() {
     markerl.setMap(map1);
 
     var markerk = new google.maps.Marker({
-      position:origin1,
+      position:origin2,
       icon:image
     });
     
